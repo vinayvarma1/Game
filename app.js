@@ -13,6 +13,11 @@ const game = () => {
         match.classList.add("fadeIn");
       });
     };
+    //Restart Game
+    const reset = document.querySelector(".reset button")
+    reset.addEventListener("click", function() {
+        location.reload();
+    })
     //Play Match
     const playMatch = () => {
       const options = document.querySelectorAll(".options button");
@@ -110,8 +115,11 @@ const game = () => {
     //Is call all the inner function
     startGame();
     playMatch();
+
   };
   
   //start the game function
   game();
+
+  
   
